@@ -1,0 +1,25 @@
+.audio-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.audio-item {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.audio-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: var(--accent, #c49b3e);
+}
+
+audio {
+  width: 100%;
+  border-radius: 8px;
+}
