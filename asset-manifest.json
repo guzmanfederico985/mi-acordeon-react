@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/mi-acordeon-react/static/css/main.1b76d3b7.css",
+    "main.js": "/mi-acordeon-react/static/js/main.81f484f4.js",
+    "static/media/acordeon.jpg": "/mi-acordeon-react/static/media/acordeon.74658862891bda325ed2.jpg",
+    "index.html": "/mi-acordeon-react/index.html",
+    "main.1b76d3b7.css.map": "/mi-acordeon-react/static/css/main.1b76d3b7.css.map",
+    "main.81f484f4.js.map": "/mi-acordeon-react/static/js/main.81f484f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b76d3b7.css",
+    "static/js/main.81f484f4.js"
+  ]
+}
