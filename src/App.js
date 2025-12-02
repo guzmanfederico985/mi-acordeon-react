@@ -11,7 +11,7 @@ import faqsData from "./data/faqs";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/mi-acordeon-react">
       <Header />
 
       <Routes>
