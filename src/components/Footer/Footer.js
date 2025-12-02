@@ -8,19 +8,32 @@ function Footer() {
         <p>📞 +54 9 351 806-4567</p>
 
         <div className="redes">
+
           <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-            <img src="/img/instagram.png" alt="Instagram" />
+            <img
+              src={process.env.PUBLIC_URL + "/img/instagram.png"}
+              alt="Instagram"
+            />
           </a>
+
           <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
-            <img src="/img/facebook.png" alt="Facebook" />
+            <img
+              src={process.env.PUBLIC_URL + "/img/facebook.png"}
+              alt="Facebook"
+            />
           </a>
+
           <a href="https://wa.me/543511234567" target="_blank" rel="noreferrer">
-            <img src="/img/whatsapp.png" alt="WhatsApp" />
+            <img
+              src={process.env.PUBLIC_URL + "/img/whatsapp.png"}
+              alt="WhatsApp"
+            />
           </a>
+
         </div>
       </div>
 
-      <p className="copy">© 2025 Mi Proyecto de acordeón</p>
+      <p className="copy">&copy; 2025 Mi Proyecto de acordeón</p>
     </footer>
   );
 }

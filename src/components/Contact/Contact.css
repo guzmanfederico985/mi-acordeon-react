@@ -57,3 +57,15 @@
   justify-content: center;
   gap: 15px;
 }
+/* --- Responsive Contact --- */
+@media (max-width: 768px) {
+  .contact-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .botones {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

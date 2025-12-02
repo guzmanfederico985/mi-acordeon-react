@@ -37,3 +37,21 @@
 .nav-links a:hover {
   color: var(--accent);
 }
+
+/* --- Responsive Header --- */
+@media (max-width: 768px) {
+  .site-header .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links li a {
+    font-size: 1.1rem;
+  }
+}

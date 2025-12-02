@@ -29,4 +29,16 @@
     grid-template-columns: 1fr;
   }
 }
+/* --- Responsive Home Cards --- */
+@media (max-width: 768px) {
+  .card-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 350px;
+  }
+}
 

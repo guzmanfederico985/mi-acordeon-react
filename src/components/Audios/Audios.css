@@ -23,3 +23,13 @@ audio {
   width: 100%;
   border-radius: 8px;
 }
+@media (max-width: 768px) {
+  .audio-item {
+    text-align: center;
+  }
+
+  audio {
+    width: 100%;
+    max-width: 300px;
+  }
+}

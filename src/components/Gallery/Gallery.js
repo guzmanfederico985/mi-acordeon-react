@@ -9,7 +9,11 @@ function Gallery({ items }) {
       <div className={styles.galeria}>
         {items.map((item) =>
           item.type === "img" ? (
-            <img key={item.id} src={item.src} alt={item.alt || "Imagen"} />
+            <img
+              key={item.id}
+              src={process.env.PUBLIC_URL + item.src}
+              alt={item.alt}
+            />
           ) : (
             <video
               key={item.id}
@@ -17,7 +21,10 @@ function Gallery({ items }) {
               width="300"
               style={{ borderRadius: "10px" }}
             >
-              <source src={item.src} type="video/mp4" />
+              <source
+                src={process.env.PUBLIC_URL + item.src}
+                type="video/mp4"
+              />
               Tu navegador no soporta el video.
             </video>
           )
@@ -31,9 +38,9 @@ Gallery.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-      type: PropTypes.oneOf(["img", "video"]).isRequired,
+      type: PropTypes.string.isRequired,
       src: PropTypes.string.isRequired,
-      alt: PropTypes.string, // opcional
+      alt: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

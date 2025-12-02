@@ -69,3 +69,17 @@
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
+/* --- Responsive Gallery --- */
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .galeria img,
+  .galeria video {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
