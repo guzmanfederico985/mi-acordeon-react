@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/mi-acordeon-react/static/css/main.688d9e7f.css",
-    "main.js": "/mi-acordeon-react/static/js/main.3d0b60dc.js",
+    "main.css": "/mi-acordeon-react/static/css/main.7039451b.css",
+    "main.js": "/mi-acordeon-react/static/js/main.61d0528c.js",
     "static/media/acordeon.jpg": "/mi-acordeon-react/static/media/acordeon.74658862891bda325ed2.jpg",
     "index.html": "/mi-acordeon-react/index.html",
-    "main.688d9e7f.css.map": "/mi-acordeon-react/static/css/main.688d9e7f.css.map",
-    "main.3d0b60dc.js.map": "/mi-acordeon-react/static/js/main.3d0b60dc.js.map"
+    "main.7039451b.css.map": "/mi-acordeon-react/static/css/main.7039451b.css.map",
+    "main.61d0528c.js.map": "/mi-acordeon-react/static/js/main.61d0528c.js.map"
   },
   "entrypoints": [
-    "static/css/main.688d9e7f.css",
-    "static/js/main.3d0b60dc.js"
+    "static/css/main.7039451b.css",
+    "static/js/main.61d0528c.js"
   ]
 }
