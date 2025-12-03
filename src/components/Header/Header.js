@@ -1,29 +1,37 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 import "./Header.css";
 
-function Header({ title = "🎹 Mi Acordeón 🎹" }) {
-  return (
-    <header className="site-header">
-      <div className="container">
-        <h1 className="logo">{title}</h1>
+function Header() {
+  const [isOpen, setIsOpen] = useState(false);
 
-        <nav>
-          <ul className="nav-links">
-            <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/audios">Audios</Link></li>
-            <li><Link to="/faq">Preguntas frecuentes</Link></li>
-            <li><Link to="/galeria">Galería</Link></li>
-            <li><Link to="/contacto">Contacto</Link></li>
-          </ul>
-        </nav>
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
+
+  return (
+    <header className="header">
+      <div className="logo">
+        <Link to="/" onClick={closeMenu}>🎹 Mi Acordeón</Link>
       </div>
+
+      {/* Botón hamburguesa */}
+      <div className={`hamburger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      {/* Navegación */}
+      <nav className={`nav ${isOpen ? "open" : ""}`}>
+        <Link to="/" onClick={closeMenu}>Inicio</Link>
+        <Link to="/audios" onClick={closeMenu}>Audios</Link>
+        <Link to="/galeria" onClick={closeMenu}>Galería</Link>
+        <Link to="/faq" onClick={closeMenu}>Preguntas</Link>
+        <Link to="/contacto" onClick={closeMenu}>Contacto</Link>
+      </nav>
     </header>
   );
 }
 
-Header.propTypes = {
-  title: PropTypes.string, // opcional
-};
-
 export default Header;
+

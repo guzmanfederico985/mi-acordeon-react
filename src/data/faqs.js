@@ -1,4 +1,9 @@
 const faqs = [
+{
+    question: "¿Qué es el acordeón?",
+    answer:
+      "El acordeón es un instrumento musical de viento y fuelle. Su sonido se produce cuando el aire, generado al abrir y cerrar el fuelle, atraviesa unas pequeñas lengüetas metálicas que vibran. El músico toca botones o teclas para producir diferentes notas y acordes. Es un instrumento muy versátil y se usa en estilos como folklore, chamamé, tango, música europea y otros géneros modernos.",
+  },
   {
     question: "¿Cuándo empecé a tocar y por qué?",
     answer:

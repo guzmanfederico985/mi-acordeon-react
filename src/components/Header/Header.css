@@ -1,57 +1,89 @@
-/* Header general */
-.site-header {
-  background: var(--primary);
-  box-shadow: var(--shadow);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.site-header .container {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 15px 25px;
+  background-color: #111;
+  color: white;
+  border-bottom: 2px solid var(--accent, #c49b3e);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.logo {
-  font-family: var(--font-title);
-  font-size: 1.5rem;
-  color: var(--accent);
+/* Logo */
+.logo a {
+  text-decoration: none;
+  color: var(--accent, #c49b3e);
+  font-weight: bold;
+  font-size: 22px;
 }
 
-/* Nav */
-.nav-links {
-  list-style: none;
+/* Nav links */
+.nav {
   display: flex;
   gap: 20px;
 }
 
-.nav-links a {
+.nav a {
   text-decoration: none;
-  color: var(--light);
-  font-weight: 600;
+  color: white;
+  font-size: 16px;
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  color: var(--accent);
+.nav a:hover {
+  color: var(--accent, #c49b3e);
 }
 
-/* --- Responsive Header --- */
+/* Hamburguesa (solo en móvil) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+/* Animación del menú hamburguesa abierto */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .site-header .container {
+  /* Ocultar menú normal */
+  .nav {
+    position: absolute;
+    top: 65px;
+    right: 0;
     flex-direction: column;
-    text-align: center;
-    gap: 10px;
+    background: #111;
+    width: 200px;
+    padding: 20px;
+    border-left: 2px solid var(--accent, #c49b3e);
+    display: none;
   }
 
-  .nav-links {
-    flex-direction: column;
-    gap: 12px;
+  .nav.open {
+    display: flex;
   }
 
-  .nav-links li a {
-    font-size: 1.1rem;
+  /* Mostrar la hamburguesa */
+  .hamburger {
+    display: flex;
   }
 }
