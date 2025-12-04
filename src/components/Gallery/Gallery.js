@@ -1,21 +1,25 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
+import { useState } from "react";
 import styles from "./Gallery.module.css";
 
 function Gallery({ items }) {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [lightboxImg, setLightboxImg] = useState(null);
 
   const openLightbox = (src) => {
-    setSelectedImage(src);
+    setLightboxImg(src);
   };
 
   const closeLightbox = () => {
-    setSelectedImage(null);
+    setLightboxImg(null);
   };
 
   return (
-    <section id="galeria" className={`section ${styles.gallerySection}`}>
-      <h2>📸 Galería</h2>
+    <section
+      id="galeria"
+      className={`section ${styles.gallerySection}`}
+      data-aos="fade-up"
+    >
+      <h2 data-aos="fade-up">📸 Galería</h2>
 
       <div className={styles.galeria}>
         {items.map((item) =>
@@ -24,16 +28,17 @@ function Gallery({ items }) {
               key={item.id}
               src={item.src}
               alt={item.alt}
-              className={styles.imagen}
-              onClick={() => openLightbox(item.src)}
-              style={{ cursor: "pointer" }}
+              className={styles.imagen}     // 🔥 Hover zoom
+              onClick={() => openLightbox(item.src)} // 🔥 Click → lightbox
+              data-aos="zoom-in"
             />
           ) : (
             <video
               key={item.id}
               controls
               width="300"
-              style={{ borderRadius: "10px" }}
+              className={styles.video}
+              data-aos="zoom-in"
             >
               <source src={item.src} type="video/mp4" />
               Tu navegador no soporta el video.
@@ -42,12 +47,11 @@ function Gallery({ items }) {
         )}
       </div>
 
-      {selectedImage && (
+      {/*LIGHTBOX */}
+      {lightboxImg && (
         <div className={styles.lightbox} onClick={closeLightbox}>
-          <img src={selectedImage} alt="vista ampliada" className={styles.lightboxImg} />
-          <button className={styles.closeBtn} onClick={closeLightbox}>
-            ✖
-          </button>
+          <img src={lightboxImg} className={styles.lightboxImg} alt="Vista ampliada" />
+          <button className={styles.closeBtn}>&times;</button>
         </div>
       )}
     </section>
@@ -66,4 +70,5 @@ Gallery.propTypes = {
 };
 
 export default Gallery;
+
 
