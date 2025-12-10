@@ -15,9 +15,9 @@
 /* --- IMÁGENES --- */
 .galeria img {
   display: block;
-  width: 250px;       /* Se fija ancho */
-  height: 350px;      /* Se fija alto */
-  object-fit: cover;  /* Recorte inteligente para evitar deformación */
+  width: 250px;       
+  height: 350px;      
+  object-fit: cover;  
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
@@ -72,9 +72,9 @@
 
   .galeria img,
   .galeria video {
-    width: 90%;       /* Más grande en celular */
+    width: 90%;       
     max-width: 350px;
-    height: 300px;    /* Más bajo en celular */
+    height: 300px;   
   }
 }
 /* --- HOVER EXTRA DE ZOOM --- */
@@ -98,7 +98,7 @@
 }
 
 
-/* --- LIGHTBOX COMPLETO (AGRANDAR AL CLICK) --- */
+/* --- LIGHTBOX COMPLETO --- */
 .lightbox {
   position: fixed;
   top: 0;
