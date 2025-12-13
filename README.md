@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Mi Acordeón - Proyecto Final Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción del proyecto
 
-## Available Scripts
+Este proyecto consiste en una aplicación web desarrollada en React como trabajo final de la materia Frontend.  
+La temática elegida es la música y el acordeón, con el objetivo de presentar un espacio personal donde se comparten imágenes, audios y videos relacionados con el instrumento.
 
-In the project directory, you can run:
+La aplicación fue pensada como una web simple, clara y funcional, priorizando la organización del código, la navegación entre secciones y una experiencia de usuario agradable tanto en desktop como en dispositivos móviles.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologías utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- React Router DOM
+- JavaScript
+- HTML
+- CSS (CSS Modules)
+- AOS (Animate On Scroll)
+- gh-pages para el despliegue
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Funcionalidades principales
 
-### `npm run build`
+- Navegación entre páginas mediante React Router DOM
+- Galería de imágenes con efecto de zoom al hacer click
+- Reproductor de audio
+- Reproductor de video
+- Animaciones suaves al hacer scroll
+- Diseño responsive adaptable desde 320px hasta pantallas grandes
+- Formulario de contacto
+- Organización del proyecto mediante componentes reutilizables
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Estructura del proyecto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+El proyecto está organizado en componentes reutilizables, separados por secciones:
 
-### `npm run eject`
+- Header
+- Home
+- Galería
+- Audios
+- FAQ
+- Contacto
+- Footer
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Los datos dinámicos (galería, secciones) se manejan mediante archivos de datos externos para mantener un código limpio y ordenado.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Despliegue
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+La aplicación se encuentra desplegada y funcional en GitHub Pages.
 
-## Learn More
+Link del repositorio:
+https://github.com/guzmanfederico985/mi-acordeon-react
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Link del sitio:
+https://guzmanfederico985.github.io/mi-acordeon-react/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Dificultades encontradas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Durante el desarrollo del proyecto surgieron varias dificultades, entre ellas:
 
-### Analyzing the Bundle Size
+- Configuración del despliegue en GitHub Pages
+- Manejo de rutas y assets (imágenes, audios y videos) en producción
+- Optimización del tamaño del video para poder subirlo al repositorio
+- Problemas de compatibilidad con librerías externas debido a la versión de React
+- Ajustes de estilos para lograr un diseño responsive correcto
+- Organización del proyecto al refactorizar componentes y carpetas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Cada uno de estos problemas fue resuelto investigando documentación, probando distintas soluciones y ajustando el código de forma progresiva.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Posibles mejoras futuras
 
-### Advanced Configuration
+- Implementar React Context para manejo de estados globales
+- Mejorar la accesibilidad mediante atributos ARIA
+- Optimizar aún más el rendimiento de imágenes y videos
+- Agregar más contenido multimedia
+- Incorporar validaciones más completas en el formulario
+- Mejorar el SEO de la aplicación
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Estado del proyecto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Proyecto finalizado y funcional, con posibilidad de seguir ampliándolo y mejorándolo a futuro.
